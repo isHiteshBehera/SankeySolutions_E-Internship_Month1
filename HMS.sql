@@ -34,7 +34,7 @@ CREATE TABLE Bill (
     UserID INT,
     BillDate DATE,
     TotalAmount DECIMAL(10, 2) NOT NULL,
-    PaymentStatus VARCHAR(20) DEFAULT 'Unpaid',A
+    PaymentStatus VARCHAR(20) DEFAULT 'Unpaid',
     FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
     FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
@@ -51,6 +51,9 @@ VALUES (2, 'doctor1', 'docpass1', 'Doctor');
 INSERT INTO Users (UserID, Username, Password, UserType)
 VALUES (3, 'nurse1', 'nursepass1', 'Nurse');
 
+INSERT INTO Users (UserID, USername, Password, USerType)
+VALUES (4, 'reception1', 'receptionpass', 'Receptionist');
+
 SELECT * FROM Users;
 
 
@@ -61,3 +64,39 @@ VALUES
     (3, 'Mike', 'Tyson', '1975-12-10', 'Male', '555-123-4567', '789 Pine St, Village', '2024-02-05', NULL);
 
 SELECT * FROM Patients;
+
+-- Assuming you know the PatientID and UserID (Doctor ID) for the diagnosis
+
+INSERT INTO Diagnosis (DiagnosisID, PatientID, UserID, DiagnosisDate, DiagnosisDescription)
+VALUES 
+    (1, 1, 2, '2024-02-15', 'Respiratory infection'),
+    (2, 2, 2, '2024-02-15', 'Digestive infection');
+
+SELECT * FROM Diagnosis;
+
+
+SELECT *
+FROM Patients
+WHERE PatientID = 1;
+
+INSERT INTO Bill (BillID, PatientID, UserID, BillDate, TotalAmount, PaymentStatus)
+VALUES (1, 1, 4, CURRENT_DATE, 1000, 'Unpaid');
+
+SELECT * FROM Bill;
+
+SELECT
+    Patients.PatientID,
+    Patients.FirstName,
+    Patients.LastName,
+    Patients.DateOfBirth,
+    Patients.Gender,
+    Diagnosis.DiagnosisID,
+    Diagnosis.DiagnosisDate,
+    Diagnosis.DiagnosisDescription
+FROM Patients
+JOIN Diagnosis ON Patients.PatientID = Diagnosis.PatientID;
+
+
+CREATE INDEX idx_diagnosis_patient ON Diagnosis (PatientID);
+
+
