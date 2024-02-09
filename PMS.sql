@@ -205,26 +205,5 @@ END //
 
 DELIMITER ;
 
-/*
--- Alter the Visitors Table
-ALTER TABLE Visitors
-ADD COLUMN VisitStartTime DATETIME,
-ADD COLUMN VisitEndTime DATETIME,
-ADD COLUMN VisitOver BOOLEAN DEFAULT FALSE;
-
--- Trigger to update VisitOver column when the visitation time is over
-DELIMITER //
-
-CREATE TRIGGER UpdateVisitOver
-BEFORE UPDATE ON Visitors
-FOR EACH ROW
-BEGIN
-    IF NEW.VisitEndTime IS NOT NULL AND NEW.VisitEndTime < NOW() THEN
-        SET NEW.VisitOver = TRUE;
-    END IF;
-END //
-
-DELIMITER ;
-*/
 
 SHOW TABLES;
