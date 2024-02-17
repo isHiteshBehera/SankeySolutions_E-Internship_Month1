@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     padding-top: 60px;
 }
 .header {
@@ -58,7 +58,7 @@ body {
     align-items: center;
 }
 .image-gallery img {
-    width: 100%;
+    width: 85%;
     height: auto;
     border-radius: 8px;
 }
@@ -66,6 +66,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.login-form input[type="submit"] {
+    background-color: #07689f;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 10px; 
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
 }
 .checkbox-container {
     display: flex;
@@ -75,5 +84,13 @@ body {
 .signup-option-btns {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+}
+.signup-option-btns .signup-btn {
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    justify-content: center;
 }
