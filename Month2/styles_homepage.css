@@ -1,16 +1,14 @@
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-* {
-    border: 1px solid black;
+* { border: 1px solid black; } 
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 .header {
     display: flex;
     flex-direction: column;
@@ -21,6 +19,7 @@
     border-bottom: 1px solid #a6a6a6;
     font-family: "Poppins", sans-serif;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,6 +27,7 @@
     width: 100%;
     padding: 20px;
 }
+
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -35,25 +35,29 @@
     justify-content: center;
     border: none;
     background: none;
-} 
+}
+
 .help-container {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     border: none;
 }
+
 .help-btn {
     padding: 10px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
+
 .search-container .search-box {
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #a6a6a6;
     font-family: "Poppins", sans-serif;
 }
+
 .auth-container .auth-btn {
     display: inline-block;
     background-color: transparent;
@@ -70,12 +74,14 @@
     background-color: #07689f;
     color: white;
 }
+
 .chips-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
+
 .chip {
     padding: 10px 20px;
     border-radius: 60px;
@@ -87,14 +93,12 @@
     display: inline-block;
     text-align: center;
 }
-body {
-    font-family: "Poppins", sans-serif;
-    width: 100%;
-}
+
 main {
     padding-left: 100px;
     padding-right: 100px;
 }
+
 .image-container {
     background-image: url('Assets/images/Banner_homepage.png');
     background-repeat: no-repeat;
@@ -108,21 +112,27 @@ main {
     padding: 20px 20px 20px 50px;
     font-size: larger;
 }
+
 .radio-container {
     display: flex;
 }
+
 .collage-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-auto-rows: auto;
-    grid-gap: 10px;
-    overflow: hidden;
-    padding: 0 20px;
+    display: flex;
+    justify-content: center
 }
 
 .collage-container img {
-    width: 100%;
+    width: auto;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     box-sizing: border-box;
+}
+
+.row-1 {
+    background-color: #f2f2f2;
+}
+
+.row-2 {
+    background-color: #e0e0e0;
 }
