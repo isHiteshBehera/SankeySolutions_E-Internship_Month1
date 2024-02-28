@@ -48,63 +48,76 @@
             </div>
 
         </header>
-        <div class="image-container">
-            <h1>Discover Your Trip <br> Worldwide!</h1>
-        </div>
         <main>
-            
-            <section>
-                <h3>Special Offers</h3>
-                <div class="radio-container">
-                    <input type="radio" id="offer1" name="offer" value="offer1">
-                    <label for="offer1">All</label>
-            
-                    <input type="radio" id="offer2" name="offer" value="offer2">
-                    <label for="offer2">Hotels</label>
-            
-                    <input type="radio" id="offer3" name="offer" value="offer3">
-                    <label for="offer3">Flights</label>
-            
-                    <input type="radio" id="offer4" name="offer" value="offer4">
-                    <label for="offer4">Multi</label>
-                </div>
-                <div class="collage-container" style="flex-direction: column;">
-                    <div class="collage-container row-1">
-                        <img src="Assets\images\hotel_beach.png" alt="Beach">
-                        <img src="Assets\images\hotel_MountainView.png" alt="Mountain View">
-                        <img src="Assets\images\hotel_RedMiniVan.png" alt="Mini Van">
-                    </div>
-                    <div class="collage-container row-2">
-                        <img src="Assets\images\hotel_SpeedBoat.png" alt="Water Sport">
-                        <img src="Assets\images\hotel_EiffelTower.png" alt="Eiffel Tower">
-                        <img src="Assets\images\hotel_Desert.png" alt="Desert">
-                    </div>
-
-                </div>
-                
-            </section>
-            <section>
-                <a>Explore Stays in Trending Destinations</a>
-                <a>Find Hot Stays!</a>
-                <div class="destination-cards">
-                    <div class="destination-cards-row1"></div>
-                </div>
-            </section>
-            <section>
-                <h3>Compare the Highest Reviewed Past Offers</h3>
-            </section>
-            <article>
-                <h3>Blogpost</h3>
-            </article>
-            <aside>
-                <h3>Download Apps</h3>
-            </aside>
-            <section>
-                <h3>About</h3>
-            </section>
-            <section>
-                <h3>Contact Us</h3>
-            </section>
+            <h2 style="display: flex; align-items: start;">Flight Favourite</h2>
+            <favourite-flights style="display: flex; flex-direction: row; gap: 10px;">
+                <flight-cards style="display: flex; flex-direction: row;">
+                    <flight-cover>
+                        <img src="Assets\images\lufthansa.png" alt="Lufthansa">
+                    </flight-cover>
+                    <flight-details style="display: flex; flex-direction: column; align-items: start;">
+                        <flight-destinations style="display: flex; flex-direction: column; align-items: start;">
+                            <div>
+                                <strong>From</strong>
+                                <strong style="color: #07689f">Stockholm</strong>   
+                            </div>
+                            <div>
+                                <strong>To</strong>
+                                <strong style="color: #07689f">Istanbul</strong>
+                            </div>
+                        </flight-destinations>
+                        <strong>$75</strong>
+                        <a style="color: #565656">SAW Istanbul Sabiha</a>
+                        <a style="color: #565656">FCO Rome Fiumicino</a>
+                        <a style="color: #565656">SAW Istanbul Sabiha</a>
+                        <strong href="#" class="text-button">Book Flight</strong>
+                    </flight-details>
+                </flight-cards>
+                <flight-cards style="display: flex; flex-direction: row;">
+                    <flight-cover>
+                        <img src="Assets\images\delta-airlines.png" alt="Delta Airlines">
+                    </flight-cover>
+                    <flight-details style="display: flex; flex-direction: column; align-items: start;">
+                        <flight-destinations style="display: flex; flex-direction: column; align-items: start;">
+                            <div>
+                                <strong>From</strong>
+                                <strong style="color: #07689f">Stockholm</strong>   
+                            </div>
+                            <div>
+                                <strong>To</strong>
+                                <strong style="color: #07689f">Istanbul</strong>
+                            </div>
+                        </flight-destinations>
+                        <strong>$75</strong>
+                        <a style="color: #565656">SAW Istanbul Sabiha</a>
+                        <a style="color: #565656">FCO Rome Fiumicino</a>
+                        <a style="color: #565656">SAW Istanbul Sabiha</a>
+                        <strong href="#" class="text-button">Book Flight</strong>
+                    </flight-details>
+                </flight-cards>
+                <flight-cards style="display: flex; flex-direction: row;">
+                    <flight-cover>
+                        <img src="Assets\images\british-airways.png" alt="British Airways">
+                    </flight-cover>
+                    <flight-details style="display: flex; flex-direction: column; align-items: start;">
+                        <flight-destinations style="display: flex; flex-direction: column; align-items: start;">
+                            <div>
+                                <strong>From</strong>
+                                <strong style="color: #07689f">Stockholm</strong>   
+                            </div>
+                            <div>
+                                <strong>To</strong>
+                                <strong style="color: #07689f">Istanbul</strong>
+                            </div>
+                        </flight-destinations>
+                        <strong>$75</strong>
+                        <a style="color: #565656">SAW Istanbul Sabiha</a>
+                        <a style="color: #565656">FCO Rome Fiumicino</a>
+                        <a style="color: #565656">SAW Istanbul Sabiha</a>
+                        <strong href="#" class="text-button">Book Flight</strong>
+                    </flight-details>
+                </flight-cards>
+            </favourite-flights>
         </main>
         <footer class="footer" style="padding-bottom: 0%;">
             <app-links style="display: flex; flex-direction: row; justify-content: space-between; padding-left: 90px; padding-right: 90px; padding-bottom: 40px">
