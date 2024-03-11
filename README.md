@@ -4,5 +4,5 @@ Correct project (attempted corrected 3 frames):
 https://mellifluous-khapse-762984.netlify.app/
 
 Previous Attempt (incomplete attempt of 30 frames):
-https://lighthearted-muffin-c6da96.netlify.app/flights
+https://lighthearted-muffin-c6da96.netlify.app/
 
