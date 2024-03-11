@@ -11,7 +11,6 @@
     <style>
         .container-details {
             background-color: white;
-            width: 725px;
             display: none;
         }
         .option-btns {
@@ -69,7 +68,7 @@
 
     </header>
     <main>
-        <div class="container" style="display: flex; flex-direction: row;">
+        <div class="container" style="display: flex; flex-direction: row; padding-top: 0%;">
             <div class="container-options" style="display: flex; flex-direction: column; text-decoration: none; color: black; align-items: start; justify-content: center;">
                 <button class="option-btns" onclick="toggleDiv('container-profile')"> <img src="Assets\icons\anonymous-avatar.svg" alt="Profile Icon" class="icon"> Profile 
                 </button>
@@ -182,10 +181,25 @@
                     </div>
                     
                 </div>
-                <div id="container-payment" class="container-details" style="background-color: white;">
-                    <div>
-                        <strong>Payment</strong>
-                    </div>
+                <div id="container-payment" class="container-details" style="background-color: white; align-items: start;">
+                    <h3>Payment</h3>
+                    <a>Securly Add Or Remove Payment Methods To Make It Easier When You Book.</a>
+                    <h4>Payment Methods</h4>
+                    <payment-gateways>
+                        <img src="Assets\images\payment-method-box.png">
+                    </payment-gateways>
+                    <cardholder-name>
+                        <div>Name On The Card</div>
+                        <input type="text" placeholder="">
+                    </cardholder-name>
+                    <cardnumber>
+                        <div>Card Number</div>
+                        <input type="text" placeholder="">
+                    </cardnumber>
+                    <exp-date>
+                        <div>Expiry Date</div>
+                        <input type="text" placeholder="MM/YY">
+                    </exp-date>
                 </div>
             </div>
             <script>
