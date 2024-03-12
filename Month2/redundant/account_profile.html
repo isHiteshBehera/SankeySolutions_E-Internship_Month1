@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles_service.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>EasySet24 - Login</title>
+
+    <style>
+        .container-details {
+            background-color: white;
+            display: none;
+        }
+        .option-btns {
+            border: none;
+            background-color: white;
+            border-radius: 4;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            width: 100%;
+            font-size: large;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="flights.html" class="logo-container">
+                <img src="Assets\icons\logo.svg" class="logo-svg">
+                <img src="Assets\icons\EasySet 24.svg" class="logo-svg">
+            </a>
+            
+            <div class="search-container">
+                <input type="search" class="search-box" placeholder="Search..." style="background-color: white;">
+            </div>
+            <div class="help-container">
+                <a class="help-btn" href="404.html"><img src="Assets\icons\England.svg"></a>
+                <a class="help-btn" href="404.html"><img src="Assets\icons\Dollar.svg"></a>
+                <a class="help-btn" href="404.html"><img src="Assets\icons\help.svg"></a>
+                <a class="help-btn" href="404.html"><img src="Assets\icons\Favourite.svg"></a>
+                <a class="help-btn" href="customer_service.html"><img src="Assets\icons\Phone.svg"></a>
+                <div>
+                    <img src="Assets\images\profile.png">
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: start;">
+                    <strong style="color: #043E5F;">Your Account</strong>
+                    <a style="color: #07689f;">Anna Carinna</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="chips-container">
+            <a href="#" style="text-decoration: none;" class="chip">Trip</a>
+            <a href="#" style="text-decoration: none;" class="chip">Deals</a>
+            <a href="#" style="text-decoration: none;" class="chip">Hotel</a>
+            <a class="chip" style="background-color: #07689f; color:white; border: none;">Flight</a>
+            <a href="#" style="text-decoration: none;" class="chip">Apartment</a>
+            <a href="#" style="text-decoration: none;" class="chip">Camper</a>
+        </div>
+
+    </header>
+    <main>
+        <div class="container" style="display: flex; flex-direction: row; padding-top: 0%;">
+            <div class="container-options" style="display: flex; flex-direction: column; text-decoration: none; color: black; align-items: start; justify-content: center;">
+                <button class="option-btns" onclick="toggleDiv('container-profile')"> <img src="Assets\icons\anonymous-avatar.svg" alt="Profile Icon" class="icon"> Profile 
+                </button>
+                <button class="option-btns" onclick="toggleDiv('container-preferences')"> <img src="Assets\icons\preferences-list.svg" alt="Profile Icon" class="icon"> Preferences</button>
+                <button class="option-btns" onclick="toggleDiv('container-payment')"> <img src="Assets\icons\wallet.svg" alt="Profile Icon" class="icon"> Payment</button>
+                <button class="option-btns" onclick="toggleDiv('container-help')"> <img src="Assets\icons\help.svg" alt="Profile Icon" class="icon"> Help</button>
+                <button class="option-btns" onclick="toggleDiv('container-settings')"> <img src="Assets\icons\setting-gear.svg" alt="Profile Icon" class="icon"> Settings</button>
+                <button class="option-btns" onclick="toggleDiv('container-signout')">Sign Out</button>
+            </div>
+            <div id="toggle-divs" style="background-color: white; border-radius: 4px; padding: 5px;">
+                <div id="container-profile" class="container-details" style="display: block;align-items: start; background-color: white;">
+                    <div class="basic-information" style="align-items: start; background-color: white;">
+                      <h2>Basic Information</h2>
+                      <a>Make Sure This Information Matches Your Travel ID, Like Your Passport Or License.</a>
+                      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: start;">
+                          <div style="flex-direction: column; align-items: start; background-color: white;">
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Full Name</a></strong>
+                                  <a>Anna Carolina</a>
+                              </div> 
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Disability</a></strong>
+                                  <a style="color: #565656;">None</a>
+                              </div> 
+                          </div>
+                          <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                              <div style="display: flex; flex-direction: column;align-items: start; background-color: white;">
+                                  <strong><a>Date Of Birth</a></strong>
+                                  <a style="color: #565656;">None</a>
+                              </div>
+                              <div style="display: flex; flex-direction: column;align-items: start; background-color: white;">
+                                  <strong><a>Accessibility Needs</a></strong>
+                                  <a style="color: #565656;">None</a>
+                              </div>
+                          </div>
+                          <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Bio</a></strong>
+                                  <a style="color: #565656;">Not Provided</a>
+                              </div>
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Gender</a></strong>
+                                  <a style="color: #565656;">Not Provided</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="contact-information" style="align-items: start; background-color: white;">
+                      <h2>Contact</h2>
+                      <a>Receive Account Activity Alerts And Trip Updates By Sharing This Information</a>
+                      <div style="display: flex; flex-direction: row; justify-content: space-between; background-color: white;"> <!-- main-box-->
+                          <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Mobile</a></strong>
+                                  <a style="color: #565656;">Not Provided</a>
+                              </div>
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Emergency</a></strong>
+                                  <a style="color: #565656;">Not Provided</a>
+                              </div>
+                          </div>
+                          <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Email</a></strong>
+                                  <a style="color: #565656;">Annacarolina@Gmail.Com</a>
+                              </div>
+                              <div style="display: flex; flex-direction: column; align-items: start; background-color: white;">
+                                  <strong><a>Address</a></strong>
+                                  <a style="color: #565656;">Not Provided</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="container-preferences" class="container-details" style="align-items: start; background-color: white;">
+                    <div class="user-preference" style="align-items: start; gap: 10px">
+                      <h2>Preferences</h2>
+                      <a>Change Your Language, Currency And Accessibility Requirements.</a>
+                      <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                          <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                              <div class="currency-details" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                                <strong>Currency</strong>
+                                <div>
+                                    <select>
+                                        <option value="USD">USD</option>
+                                        <option value="INR">INR</option>
+                                        <option value="GBP">GBP</option>
+                                    </select>
+                                </div>
+                                <button class="button-edit">Edit</button>
+                              </div>
+                              <div class="language-details" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                                <strong>Language</strong>
+                                <div>
+                                    <select>
+                                        <option value="English">United Kingdom English</option>
+                                        <option value="French">French</option>
+                                        <option value="Spanish">Spanish</option>
+                                    </select>
+                                </div>
+                                <button class="button-edit">Edit</button>
+                              </div>
+                              <div style="display: flex; justify-content: center; align-items: center; gap:10px;">
+                                <strong>Accessibility<br>Requirements</strong>
+                                <a>Filter Out Properties That Don't Meet Your Needs.</a>
+                                <button class="button-edit">Edit</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div id="container-payment" class="container-details" style="background-color: white; align-items: start;">
+                    <h3>Payment</h3>
+                    <a>Securly Add Or Remove Payment Methods To Make It Easier When You Book.</a>
+                    <h4>Payment Methods</h4>
+                    <payment-gateways>
+                        <img src="Assets\images\payment-method-box.png">
+                    </payment-gateways>
+                    <cardholder-name>
+                        <div>Name On The Card</div>
+                        <input type="text" placeholder="">
+                    </cardholder-name>
+                    <cardnumber>
+                        <div>Card Number</div>
+                        <input type="text" placeholder="">
+                    </cardnumber>
+                    <exp-date>
+                        <div>Expiry Date</div>
+                        <input type="text" placeholder="MM/YY">
+                    </exp-date>
+                </div>
+            </div>
+            <script>
+                function toggleDiv(divId) {
+                    var allDivs = document.querySelectorAll('.container-details');
+
+                    // Hide all divs
+                    allDivs.forEach(function(div) {
+                        div.style.display = 'none';
+                    });
+
+                    // Show the selected div
+                    var selectedDiv = document.getElementById(divId);
+                    if (selectedDiv) {
+                        selectedDiv.style.display = 'block';
+                    }
+                }
+            </script>    
+        </div>
+    </main>
+    <footer class="footer" style="padding-bottom: 0%;">
+        <app-links style="display: flex; flex-direction: row; justify-content: space-between; padding-left: 90px; padding-right: 90px; padding-bottom: 40px">
+            <text style="display: flex; flex-direction: column; align-items: start; padding: 7px">
+                <strong style="color: #07689F;">Go Further With The EasySet24 App</strong>
+                <a>Enjoy Savings On Chosen Hotels And Flights When You Book Through The EasySet24 Website.</a>
+                <a>Additionally, Earn One Key Cash For Every Booking Made Through The App.</a>
+                <a>Secured By Europe GTP</a>
+            </text>
+            <download-links style="display: flex; flex-direction: column;">
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="Assets\icons\app-store.svg">
+                </a>
+                <a href="https://play.google.com/store" target="_blank">
+                    <img src="Assets\icons\google-play.svg">
+                </a>
+            </download-links>
+        </app-links>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <a href="#" >Our Story</a>
+                <a href="#" >Work With Us</a>
+                <a href="#" >Press & Media</a>
+                <a href="#" >Privacy & Security</a>
+            </div>
+            <div class="footer-column">
+                <h3>We Offer</h3>
+                <a href="#" >Trip Sponsorship</a>
+                <a href="#" >Last Minute Flights</a>
+                <a href="#" >Best Deals</a>
+                <a href="#" >AI-Driven Search</a>
+            </div>
+            <div class="footer-column">
+                <h3>Headquarters</h3>
+                <a href="#" >England</a>
+                <a href="#" >France</a>
+                <a href="#" >Canada</a>
+                <a href="#" >Iceland</a>
+            </div>
+            <div class="footer-column">
+                <h3>Travel Blogs</h3>
+                <a href="#">Bali Travel Guide</a>
+                <a href="#">Sri Travel Guide</a>
+                <a href="#">Peru Travel Guide</a>
+                <a href="#">Swiss Travel Guide</a>
+            </div>
+            <div class="footer-column">
+                <h3>Activities</h3>
+                <a href="#">Tour Leading</a>
+                <a href="#">Cruising & Sailing</a>
+                <a href="#">Camping</a>
+                <a href="#">Kayaking</a>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <a href="#">Report Error</a>
+                <a href="#">Ask Online</a>
+                <a href="#">Travel Insurance</a>
+            </div>
+        </div>
+        <div class="footer-bottoms" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="payment-links">
+                <a href="#">
+                    <img src="Assets\icons\visa.svg">
+                </a>
+                <a href="#">
+                    <img src="Assets\icons\american-express.svg">
+                </a>
+                <a href="#">
+                    <img src="Assets\icons\mastercard.svg">
+                </a>
+                <a href="#">
+                    <img src="Assets\icons\paypal.svg">
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="Assets\icons\linkedin_blue.svg"></a>
+                <a href="#"><img src="Assets\icons\telegram_blue.svg"></a>
+                <a href="#"><img src="Assets\icons\twitter_blue.svg"></a>
+                <a href="#"><img src="Assets\icons\facebook_blue.svg"></a>
+                <a href="#"><img src="Assets\icons\instagram_blue.svg"></a>
+            </div>
+            <div class="email-subscription">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p style="background: #d9d9d9;">© Copyright EasySet24</p>
+            <p style="background: #d9d9d9;">EasySet24@Gmail.com</p>
+            <p style="background: #d9d9d9;">"EasySet24: Seamless Journeys, Unrivalled Travel Wisdom!"</p>
+            <p style="background: #d9d9d9;">123 Oxford Street, London</p>
+            <p style="background: #d9d9d9;">+44 20 7123 4567</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>EasySet24 - Registration</title>
+</head>
+<body>
+    <header class="header">
+        <a href="homepage_hotel.html" class="logo-container">
+            <img src="Assets\icons\logo.svg" class="logo-svg">
+            <img src="Assets\icons\EasySet 24.svg" class="logo-svg">
+        </a>
+        <div class="help-container">
+            <button class="help-btn"><img src="Assets\icons\England.svg"></button>
+            <button class="help-btn"><img src="Assets\icons\help.svg"></button>
+        </div>
+    </header>
+    <div class="centered-container">
+        <div class="image-gallery">
+            <img src="Assets\images\travel photo.png" class="login-image">
+        </div>
+        <div class="login-form">
+            <h2>Register</h2>
+            <h5>Login to access your EasySet24 account</h5>
+            <div class="username-container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; flex-direction: column;justify-content: space-between; align-items: left;">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div style="display: flex; flex-direction: column;justify-content: space-between; align-items: left;">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="password">Confirm Password</label>
+            <input type="password" id="password" name="password" required>
+            <div class="remember-me">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">I agree to all the Terms and Privacy Policies</label>
+            </div>
+            <input type="submit" value="Register">
+            
+            <div class="registration-container" style="text-align: center;">
+                Already have an account? <strong><a href="login.html">Login</a></strong>
+            </div>
+            <h3 style="text-align: center;">Or</h3>
+            <div class="signup-option-btns">
+                <button class="signup-btn"><img src="Assets\icons\Facebook.svg" alt="Signup with Facebook"></button>
+                <button class="signup-btn"><img src="Assets\icons\Apple.svg" alt="Signup with Apple"></button>
+                <button class="signup-btn"><img src="Assets\icons\Google.svg" alt="Signup with Google"></button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
