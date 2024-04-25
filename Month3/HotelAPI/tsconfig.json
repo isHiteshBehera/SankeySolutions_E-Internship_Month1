@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "baseUrl": "./src",
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "paths": {
+        "*": ["*", "src/*"]
+      }
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  
