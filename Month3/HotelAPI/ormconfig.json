@@ -9,6 +9,6 @@
     "logging": false,
     "entities": ["src/entities/*.ts"],
     "cli": {
-        "entitiesDir": "src/entities"
+      "entitiesDir": "src/entities"
     }
-}
+  }
