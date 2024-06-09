@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="Assets/icons/logo.svg" type="image/svg+xml">
+
+    <title>Homepage</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="navbar">
+            <a href="#" class="logo-container">
+                <img src="public\assets\Logo.svg" class="logo-svg" alt="EasySet24">
+            </a>
+        </div>
+
+    </header>
+
+    <div class="usermessage">
+        <h2>Let's Plan Your Stay!</h2>
+    </div>
+
+    <div class="formcontainer">
+        <div class="hotelLocation" style="display: flex; flex-direction: row; gap: 10px;">
+            <div style="display: flex; flex-direction: column;">
+                <label>Destination</label>
+                <input type="text" placeholder="Destination">
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <label>Category</label>
+                <select>
+                    <option value="Longlasting" selected>Long Lasting</option>
+                    <option value="Shortlasting">Short Lasting</option>
+                    <option value="Weekend">Weekend</option>
+                    <option value="Weekdays">Weekdays</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="display: flex;flex-direction: column; width: 100%;">
+            <label>Accomodation</label>
+            <select>
+                <option value="Family Rooms" selected>Family Rooms</option>
+                <option value="Adult Rooms">Adult Rooms</option>
+                <option value="Children Rooms">Children Rooms</option>
+                <option value="Large Group Rooms">Large Group Rooms</option>
+                <option value="Solo Rooms">Solo Rooms</option>
+            </select>
+        </div>
+
+        <div class="stayInDates" style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column;">
+                <label>Arrival Date</label>
+                <input type="date" placeholder="DD/MM/YYYY">
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <label>End Date</label>
+                <input type="date" placeholder="DD/MM/YYYY">
+            </div>
+        </div>
+
+        <button class="searchbutton">Search</button>
+    </div>
+
+    <footer class="footer" style="padding-bottom: 0%;">
+        <app-links
+            style="display: flex; flex-direction: row; justify-content: space-between; padding-left: 90px; padding-right: 90px; padding-bottom: 40px">
+            <text style="display: flex; flex-direction: column; align-items: start; padding: 7px">
+                <strong style="color: #07689F;">Go Further With The EasySet24 App</strong>
+                <a>Enjoy Savings On Chosen Hotels And Flights When You Book Through The EasySet24 Website.</a>
+                <a>Additionally, Earn One Key Cash For Every Booking Made Through The App.</a>
+                <a>Secured By Europe GTP</a>
+            </text>
+            <download-links style="display: flex; flex-direction: column;">
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="Assets\icons\app-store.svg" alt="App Store">
+                </a>
+                <a href="https://play.google.com/store" target="_blank">
+                    <img src="Assets\icons\google-play.svg" alt="Google Play Store">
+                </a>
+            </download-links>
+        </app-links>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <a href="#">Our Story</a>
+                <a href="#">Work With Us</a>
+                <a href="#">Press & Media</a>
+                <a href="#">Privacy & Security</a>
+            </div>
+            <div class="footer-column">
+                <h3>We Offer</h3>
+                <a href="#">Trip Sponsorship</a>
+                <a href="#">Last Minute Flights</a>
+                <a href="#">Best Deals</a>
+                <a href="#">AI-Driven Search</a>
+            </div>
+            <div class="footer-column">
+                <h3>Headquarters</h3>
+                <a href="#">England</a>
+                <a href="#">France</a>
+                <a href="#">Canada</a>
+                <a href="#">Iceland</a>
+            </div>
+            <div class="footer-column">
+                <h3>Travel Blogs</h3>
+                <a href="#">Bali Travel Guide</a>
+                <a href="#">Sri Travel Guide</a>
+                <a href="#">Peru Travel Guide</a>
+                <a href="#">Swiss Travel Guide</a>
+            </div>
+            <div class="footer-column">
+                <h3>Activities</h3>
+                <a href="#">Tour Leading</a>
+                <a href="#">Cruising & Sailing</a>
+                <a href="#">Camping</a>
+                <a href="#">Kayaking</a>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <a href="#">Report Error</a>
+                <a href="#">Ask Online</a>
+                <a href="#">Travel Insurance</a>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <p style="background: #d9d9d9;">© Copyright EasySet24</p>
+            <p style="background: #d9d9d9;">EasySet24@Gmail.com</p>
+            <p style="background: #d9d9d9;">"EasySet24: Seamless Journeys, Unrivalled Travel Wisdom!"</p>
+            <p style="background: #d9d9d9;">123 Oxford Street, London</p>
+            <p style="background: #d9d9d9;">+44 20 7123 4567</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
